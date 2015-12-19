@@ -1,0 +1,59 @@
+\documentclass[12pt, oneside]{article}
+% TODO: figure out mount2 option
+%\usepackage[cam,width=4truein,height=6truein,letter,center]{crop}
+\usepackage[icelandic,english]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{calligra}
+\usepackage{setspace}
+\usepackage[papersize={4in,6in},hmargin=0cm,vmargin={1.5cm,1cm}]{geometry}
+%\usepackage[a5paper]{geometry}
+\usepackage{pstricks}
+\usepackage{psvectorian}
+\usepackage{xcolor}
+% define new fonts
+\newcommand{\fancy}{\calligra\small}
+\newcommand{\block}{\sc\scriptsize}
+\definecolor{beige}{rgb}{0.96, 0.96, 0.86}
+\pagestyle{empty}
+
+
+\begin{document}
+\begin{center}
+\begin{pspicture}(-0.5\paperwidth,-0.4\paperheight)(0.5\paperwidth,0.5\paperheight)%
+\renewcommand*{\psvectorianDefaultColor}{black}%
+\psframe[linewidth=0.4pt,fillstyle=solid,fillcolor=beige](-0.5\paperwidth,-0.4\paperheight)(0.495\paperwidth,0.595\paperheight)%
+%haut+bas
+\rput[t](0,8){\psvectorian[width=6cm]{71}}
+\rput[b](0,-5){\psvectorian[width=6cm,flip]{71}}
+%coins
+%\rput[tl](-5,5){\psvectorian[width=2cm]{63}}
+%\rput[tr](5,5){\psvectorian[width=2cm,mirror]{63}}
+%\rput[bl](-5,-5){\psvectorian[width=2cm,flip]{63}}
+%\rput[br](5,-5){\psvectorian[width=2cm,flip,mirror]{63}}
+% cotes
+%\rput[bl]{-90}(-5,3){\psvectorian[width=6cm]{46}}
+%\rput[bl]{90}(5,-3){\psvectorian[width=6cm]{46}}
+%texte+soulignement+chapeau
+\rput(0,6){\Huge Brúðkaup}
+\rput(0,5){\large Kæru Hrafnhildur og Guðmundur}
+\rput(0,4.1){\small Þann 14.07.14 ætlum við að gifta okkur}
+\rput(0,3.5){\small hjá Sýslumanninum í Reykjavík.}
+\rput(0,2){\scriptsize Við viljum bjóða ykkur að koma og fagna með okkur }
+\rput(0,1.5){\scriptsize laugardaginn \textbf{19.07.14} n.k. }
+\rput(0,1){\scriptsize kl. 20:00 að Hofsvallagötu 58, 107 Reykjavík.}
+\rput(0,0.5){\scriptsize Léttar veitingar og veigar verða í boði.}
+\rput(0,0){\scriptsize Ef þið sjáið ykkur ekki fært að koma vinsamlegast }
+\rput(0,-0.5){\scriptsize hafið samband í síma 866-8366 eða 698-6667.}
+
+\rput(0,-1.5){\scriptsize Kærar kveðjur}
+\rput(0,-2){\normalsize \textit{Hildur \& Guðmundur}}
+
+\rput[t](0,-2.5){\psvectorian[width=4cm]{75}}
+%\rput[b](0,4){\psvectorian[width=5cm]{69}}
+%oiseaux
+%\rput[tr]{-30}(-1,2.5){\psvectorian[width=2cm]{113}}
+%\rput[tl]{30}(1,2.5){\psvectorian[width=2cm,mirror]{113}}
+\end{pspicture}%
+\end{center}
+\end{document}
